@@ -1,12 +1,12 @@
-import express from "express";
+import express = require("express");
 import { Server } from "socket.io";
 
 // import path, { dirname } from "path";
-import path from "path";
+import path = require("path");
 // import { fileURLToPath } from "url";
 // const __dirname = dirname(fileURLToPath(import.meta.url));
 
-import sqlite from "sqlite3";
+import sqlite = require("sqlite3");
 
 /* DB */
 
@@ -25,8 +25,8 @@ const server = app.listen(3000, () => {
 });
 io.attach(server);
 
-import livereload from "livereload";
-import connectLiveReload from "connect-livereload";
+import livereload = require("livereload");
+import connectLiveReload = require("connect-livereload");
 
 // console.log(process.env.NODE_ENV);
 if (process.env.NODE_ENV === 'development') {
